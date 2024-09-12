@@ -1,0 +1,35 @@
+// src/App.js
+import React from 'react';
+import './index.css'; // Importar o CSS principal
+import logo  from '../src/assets/logo.png'
+import image2 from  '../src/assets/image2.png'
+const App = () => {
+    return (
+        <div className="App">
+            <header>
+                <div >
+                    <img src={logo} className="logo" />
+                </div>
+                <nav className="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Dicas</a>
+                    <a href="#">Profissionais</a>
+                    <a href="#">SOS</a>
+                </nav>
+            </header>
+            <section className="subtitulo">
+                <h2>Suplementação</h2>
+            </section>
+            <main className='selectionSobre'>
+                <section>
+                    <img src={image2}  className="imagemPrincipal"/>
+                </section>
+            </main>
+            <footer>
+                <p>2024 fitshine</p>
+            </footer>
+        </div>
+    );
+};
+
+export default App;
