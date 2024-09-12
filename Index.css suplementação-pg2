@@ -1,0 +1,89 @@
+/* Estilo global */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../src/assets/image.png') no-repeat center center fixed; /* Substitua o caminho pela sua imagem de fundo */
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(110, 0, 140, 0.758); /* Fundo escuro para o texto do cabeçalho */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Ajusta a altura do logo conforme necessário */
+}
+
+.nav {
+  display: flex;
+  gap: 15px; /* Espaço entre os botões */
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em; /* Tamanho da fonte dos botões de navegação */
+  padding: 10px 15px;
+  border-radius: 5px; /* Bordas arredondadas para os botões */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.nav a:hover {
+  background-color: rgba(130, 0, 180, 0.6); /* Cor de fundo ao passar o mouse sobre os botões */
+}
+
+/* Estilo do subtítulo */
+.subtitulo {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em; /* Tamanho da fonte do subtítulo */
+  color: #fff; /* Cor do texto do subtítulo */
+  background-color: rgba(110, 0, 140, 0.6); /* Cor de fundo do subtítulo */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Estilo do conteúdo principal */
+main {
+  flex: 1; /* Permite que o conteúdo principal ocupe o espaço restante entre o cabeçalho e o rodapé */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Garante que a imagem fique em coluna */
+}
+
+.imagemPrincipal{
+
+  max-width: 96%;
+  height: auto;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: rgba(110, 0, 140, 0.758); /* Cor roxa com opacidade */
+  color: #fff;
+  text-align: center;
+  padding: 20px; /* Aumenta o espaçamento interno do rodapé */
+  width: 100%;
+  position: relative; /* Ajusta a posição do rodapé */
+}
